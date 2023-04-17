@@ -46,7 +46,7 @@ public class Driver {
 
             //현재의 주문 횟수 확인
             orderSize = orders.size()-1;
-
+            System.out.println(orderSize);
             //메뉴 고르기
             orders.get(orderSize).setPizzaMenu();
 
@@ -62,8 +62,8 @@ public class Driver {
             //가격 연산
             orders.get(orderSize).setTotalPrice();
             totalPrice = 0;
-            for (int i = 0; i < orderSize + 1; i++) {
-                totalPrice += orders.get(orderSize).getTotalPrice();
+            for (int i = 0; i < orderSize +1; i++) {
+                totalPrice += orders.get(i).getTotalPrice();
             }
             orderSys.currentOrderTotal(totalPrice);
         }
