@@ -46,7 +46,7 @@ public class Driver {
 
             //현재의 주문 횟수 확인
             orderSize = orders.size()-1;
-            System.out.println(orderSize);
+
             //메뉴 고르기
             orders.get(orderSize).setPizzaMenu();
 
